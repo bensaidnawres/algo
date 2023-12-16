@@ -1,0 +1,19 @@
+ALGORITHM test2.algo
+VAR
+    arr1,arr2:ARRAY_OF_INTEGER;
+    i,j,sum:INTEGER;
+    sum:=0;
+    notfound:BOOLEAN;
+BEGIN
+    FOR i FROM 0 TO arr1.length-1  DO
+    notfound=true
+        FOR j FROM 0 TO arr2.length-1  DO
+           IF (arr1[i]==arr2[j]) THEN
+          notfound=false
+           END_IF
+        END_FOR
+        IF (notfound==true) THEN
+           sum=sum+arr1[i]
+        END_IF
+    END_FOR
+END

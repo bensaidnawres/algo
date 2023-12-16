@@ -1,0 +1,19 @@
+ALGORITHM test1.algo
+VAR
+    nv,nm,i:INTEGER;
+    c:STRING;
+    nv:=0;
+    nm:=1;
+    i:=0;
+BEGIN
+    WHILE (c[i]#".") DO
+        IF (c[i]in[a,y,e,i,u,A,Y,E,I,U]) THEN
+            nv=nv+1;
+        END_IF
+        IF (c[i]=" ") THEN
+            nm=nm+1
+        END_IF
+    END_WHILE
+    write("the number of vowels "nv)
+    write("the number of words" nm)
+END
