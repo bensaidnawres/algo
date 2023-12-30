@@ -1,0 +1,14 @@
+ALGORITHM simpleSorting
+VAR
+    arr:ARRAY_OF_INTEGER
+    i,j,tmp:INTEGER
+BEGIN
+    FOR i FROM 0 TO array.length-1 STEP step  DO
+        tmp=arr[i]
+        WHILE (arr[j]>tmp) DO
+            arr[j+1]=arr[j]
+            j=j-1
+            arr[j+1]=tmp
+        END_WHILE
+    END_FOR
+END

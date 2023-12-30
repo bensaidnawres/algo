@@ -1,0 +1,28 @@
+FUNCTION verification (x1,y1,x2,y2) : return_INTEGER
+VAR
+    x1,y1,x2,y2:INTEGER
+BEGIN
+    sum=x1*x2+y1*y2
+
+    RETURN sum ;
+ 
+END
+s= FUNCTION verification
+   IF (s=0) THEN
+        write("les deux ...")
+        else 
+        write ("")
+    END_IF
+
+
+PROCEDURE verification (x1,y1,x2,y2)
+VAR
+     x1,y1,x2,y2:INTEGER
+BEGIN
+    sum=x1*x2+y1*y2
+    IF (sum=0) THEN
+        write("les deux ...")
+        else 
+        write ("")
+    END_IF
+END
